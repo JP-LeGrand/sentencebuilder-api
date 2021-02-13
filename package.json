@@ -1,0 +1,17 @@
+{
+  "name": "sentencebuilder-api",
+  "version": "1.0.0",
+  "description": "sentence builder api",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "author": "Joseph Promise LeGrand",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.11.16",
+    "nodemon": "^2.0.7"
+  }
+}
