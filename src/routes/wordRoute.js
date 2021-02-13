@@ -11,6 +11,12 @@ router.get("/words", async (req, res) => {
   res.send(word);
 });
 
+//Retrieves the different word types
+router.get("/types", async (req, res) => {
+  const word = await Word.distinct("type");
+  res.send(word);
+});
+
 //Allows user to submit a word type
 router.post("/submit", async (req, res) => {
   const { word, type } = req.body;
@@ -27,4 +33,4 @@ router.post("/submit", async (req, res) => {
   }
 });
 
-module.exports =  router;
+module.exports = router;
