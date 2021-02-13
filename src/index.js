@@ -1,4 +1,10 @@
+import { sentence } from "./model/sentence.js";
+import { word } from "./model/word.js";
 import express from "express";
+
+// Compile model from schema
+sentence();
+word();
 
 //Creates an express application
 const app = express();
