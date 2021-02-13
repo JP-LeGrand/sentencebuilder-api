@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "sentence builder api",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "dev": "nodemon src/index.js"
   },

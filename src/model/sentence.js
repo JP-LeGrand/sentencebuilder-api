@@ -1,12 +1,15 @@
-import mongoose from "mongoose";
+const mongoose = require("mongoose");
 const { Schema, model } = mongoose;
+
+const wordSchema = new Schema({
+  word: String,
+  type: String,
+});
 
 //Define sentence schema
 const sentenceSchema = new Schema({
-  dateTime: Number,
-  sentence: String,
+  dateTime: Date,
+  sentence: [wordSchema],
 });
 
-export const sentence = () => {
-  model("Sentence", sentenceSchema);
-};
+model("Sentence", sentenceSchema);

@@ -1,12 +1,14 @@
-import mongoose from "mongoose";
+const mongoose = require("mongoose");
 const { Schema, model } = mongoose;
 
 //Define word schema
 const wordSchema = new Schema({
-  word: String,
+  word: {
+    type: String,
+    unique: true,
+    required: true,
+  },
   type: String,
 });
 
-export const word = () => {
-  model("Word", wordSchema);
-};
+model("Word", wordSchema);
