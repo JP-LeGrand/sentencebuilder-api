@@ -29,7 +29,7 @@ connect(mongoUri, {
   useCreateIndex: true,
 });
 
-//Checks our connections is successful to mongo instanceF
+//Checks our connections is successful to mongo instance
 connection.on("connected", () => {
   console.log("Connected to mongo instance");
 });
