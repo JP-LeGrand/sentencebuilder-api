@@ -1,12 +1,12 @@
 # Getting Started with Sentence Builder API
 
-It is a Node.js express project that provides a restful api for the clientside app sentencebuilder-ui.
+It is a Node.js express project that provides a restful api for the client side app sentencebuilder-ui.
 
 ## Available Scripts
 
-Install the node packages by running
+Install the node packages by running:
 
-### 'yarn'
+### `yarn`
 
 Start the dev server by running in the project directory:
 
